@@ -25,10 +25,10 @@ def stalk(userid):
     # time.sleep(2)
 
     username = driver.find_element(By.NAME, "username")
-    username.send_keys("aryamanraj123456789@gmail.com")
+    username.send_keys({email :string})
 
     password = driver.find_element(By.NAME, "password")
-    password.send_keys("zombiesmasher12")
+    password.send_keys({password :string})
 
     button = driver.find_element(By.XPATH, "//*[@id='loginForm']/div/div[3]")
     button.click()
